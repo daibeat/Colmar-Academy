@@ -1,0 +1,518 @@
+
+/*UNIVERSAL STYLES*/
+
+
+
+* {
+    font-family: 'Lato', sans-serif;
+    color: #474747;
+}
+
+
+/*HEADER*/
+
+header {
+    margin: 0 auto;
+    display: flex;
+    height: 64px;
+    justify-content: space-between;
+    background-color: white;
+}
+
+header img {
+    width: 50px; 
+    height: 50px;
+    padding-left: 24px;
+}
+
+header p {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    color: darkgray;
+}
+
+.left--header {
+    display: flex;
+}
+nav span {
+    font-weight: 700;
+}
+
+.topnav{
+    color: #474747;
+    margin-right: 24px;
+}
+
+.topnav li {
+    display: inline-block;
+
+}
+
+.topnav li a {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .topnav li a:hover{
+    background-color: rgb(219, 219, 219) ;
+    cursor: pointer;
+
+  }
+
+  .mobileNav {
+    display: none;
+}
+
+  /* Mobile version header */
+
+  @media (max-width:768px) {
+
+    .mobileNav {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 64px;
+        padding-right: 30px;
+}
+.left--header, .topnav {
+    display: none;
+}
+  }
+
+  /* MAIN*/
+
+
+  /* SECTION 1 learn*/
+
+
+  .learn--container{
+      display: flex;
+      margin: 0 auto;
+      background-color:lightgray;
+  }
+  
+  .learn {
+    width: 60%;
+    margin: 32px 24px;
+  }
+
+  .learn img {
+      width: 100%;
+  }
+
+   .learn--right {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       max-width: 270px;
+       margin-left: 24px;
+   }
+
+  .learn--right h1 {
+      font-size: 30px;
+      font-weight: 700;
+      
+  }
+
+  .learn--right p {
+   font-size: 16px;   
+   padding-bottom: 20px;
+  }
+
+  .learn--right input {
+      background-color: #474747;
+      font-size: 15px;
+      font-weight: 300;
+      color: white;
+      padding: 8px 0;
+      cursor: pointer;
+      max-width: 230px;
+      
+  }
+  
+    /* Mobile version section 1 */
+
+    @media (max-width:768px) {
+
+        .mobile-learn-container {
+        flex-direction: column;
+        max-width: 100%;
+            
+    }
+
+    .mobile-learn {
+        width: 100%;
+        margin: 0;
+
+    }
+    
+    .mobile-learn-right {
+         margin: 16px;
+         max-width: 70%;
+
+    }
+
+    .mobile-learn-right h1{
+        font-weight: 700;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-size: 40px;
+        margin: 0;
+    }
+    
+    .mobile-learn-right p {
+        font-size: 20px;
+        margin: 0;
+        padding-bottom: 24px;
+        line-height: 30px;
+    }
+
+    .mobile-learn-right input {
+        margin-bottom: 32px;
+        max-width: 100%;
+        background-color: darkgray;
+    }
+}
+    
+
+
+    /* SECTION 2 practice */
+
+    .practice {
+        background-color: white;
+        display: flex;
+    }
+
+    .practice--left {
+        display: flex;
+        flex-direction: column;
+        margin: 32px 24px;  
+        width: 60%;
+  
+    }
+    .practice--left img {
+        width: 100%;
+    }
+
+    .practice--left h1 {
+        font-weight: 700;
+    }
+
+    .practice--left p {
+        font-size: 18px;
+        font-weight: 300;
+        max-width: 60%;
+    }
+
+    .practice--left aside {
+        font-size: 12px;
+    }
+ 
+    /*practice section right side*/
+
+    .practice--right{
+        width: 40%;
+        border-left: 1px solid rgb(219, 219, 219);
+    }
+    
+    .practice--right-content {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+
+    }  
+
+    .practice--right-content:hover {
+        background-color: rgb(219, 219, 219) ;
+        cursor: pointer;
+    }
+
+    .practice-img {
+        max-width: 35%;
+        margin: 16px 16px;
+    }
+     
+    .practice-img img {
+        width: 100%;
+        height: auto;
+    } 
+ 
+    
+    .right--content-text p {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .right--content-text a {
+        font-size: 14px;
+        font-weight: 300;
+       text-decoration: none;
+       color: rgb(66, 210, 247);
+    }
+
+    .mobile {
+        display: none;
+    }
+   
+    /* Mobile version section 2 */
+
+    @media (max-width:768px) {
+      
+
+        .practice--left {
+            display: none;
+        }
+
+        .practice--right {
+            width: 100%;
+            margin: 0;
+            max-width: 100%;
+            border: none;
+        }
+
+        .practice--right-content {
+            flex-direction: column;
+            margin: 16px;
+            align-items: flex-start;
+
+        }
+
+
+        .practice--right-content .right--content-text {
+            margin-left: 16px;
+            line-height: 20px;
+
+        }
+        
+
+        .practice {
+            margin: 0;
+        }
+
+        .practice-img {
+           max-width: 100%;
+        }
+
+        .desktop {
+            display: none;
+        }
+        
+        .mobile {
+            display: inline-block;
+        }
+
+        .guest {
+            padding-bottom: 32px;
+
+        }
+
+
+    }
+
+    /* SECTION 3 courses*/
+
+   
+    .start {
+        background-color: rgb(240, 239, 239);
+        padding: 32px 72px;
+    }
+    
+    .start h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+   .course-grid {
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       width: 100%;
+       grid-gap: 32px 32px;
+       box-sizing: border-box;
+   }
+
+   .course-text {
+    margin: 16px 0 24px 16px;
+}
+  
+ .card-container {
+     background-color: white;
+ }
+ .card-text {
+    margin: 16px 0 24px 16px;
+    
+}
+
+ .card-text p{
+    font-weight: 300;
+    font-size: 14px;
+}
+.card-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+    /* Mobile version section 3 courses */
+
+    @media (max-width:768px) {
+
+ 
+        .course-grid {
+            display: block;
+        }
+
+        .start {
+            padding: 0;
+        padding: 32px 0;
+        background-color: white;
+        border-top: 1px solid lightgray;
+        }
+        
+         .card-img, .card-text p {
+            display: none;
+        }
+
+        .start h1{
+            width: 100%;
+            margin: 0;
+            padding-bottom: 16px;
+        }
+
+        .card-text {
+            width: 90%;
+            margin: 8px auto;
+            color: #383838
+        }
+
+        .card-text h3{
+            background-color: rgb(219, 219, 219) ;
+            padding: 16px 0 24px 16px;
+            margin: 0;
+        }
+        .card-container{
+            width: 100%;
+
+        }
+       
+
+    }
+
+    /* SECTION 4 thesis*/
+
+    .thesis-block {
+        display: flex;
+    }
+
+    .thesis--exhibit h1 {
+        font-size: 36px;
+        text-align: center;
+
+    }
+
+    /*video section left*/
+
+    .video-section {
+        display: flex;
+        flex-direction: column;
+        margin: 16px 24px;  
+        width: 60%;
+    }
+
+    .video video {
+        width: 100%;
+    
+    }
+
+    .video p {
+        font-size: 14px;
+        font-weight: 300;
+        max-width: 100%;
+    }
+
+    /*thesis right section*/
+
+    .thesis--right {
+        width: 40%;
+        margin-top: 16px;
+    }
+
+    .thesis--right-content {
+        display: flex;
+        align-items: center;
+
+
+    }
+    .thesis--right-content:hover {
+        background-color: rgb(219, 219, 219) ;
+        cursor: pointer;
+    }
+
+    .thesis-img {
+        max-width: 35%;
+        margin: 16px 16px;
+    }
+
+    .thesis-img img {
+        width: 100%;
+        height: auto;
+    } 
+
+    .right-content-text p {
+       font-size: 14px;
+       font-weight: 300;
+
+    }
+    
+ 
+        /* Mobile version section 4 thesis */
+
+        @media (max-width: 768px) {
+
+        .thesis--right, .video-details{
+            display: none;
+        }
+
+        .video-section {
+            width: 100%;
+        }
+    }
+        /* SECTION 5 footer*/
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            margin: 16px auto 32px 24px;
+            font-weight: 300;
+            font-size: 12px;
+
+        }
+ 
+        .text-footer {
+        display: flex ;
+        justify-content: space-around;
+
+         }
+
+         .text-footer p  {
+             margin-right: 24px;
+         }
+  
+         .text-footer a {
+            text-decoration: none;
+
+         }
+        
+                 /* Mobile version footer */
+
+                 @media (max-width: 768px) {
+
+                    .text-footer {
+                        display: none;
+                    }
+                 }
